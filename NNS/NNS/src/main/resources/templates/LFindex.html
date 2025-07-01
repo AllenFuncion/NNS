@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NNS Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+	    /* Hero Button Style */
+	    .hero .btn {
+	        padding: 12px 25px;  /* Increased padding */
+	        background-color: #f39c12;
+	        color: white;
+	        text-decoration: none;
+	        font-size: 1.2rem;  /* Increased font size */
+	        border-radius: 5px;  /* Slightly larger rounded corners */
+	        transition: background-color 0.3s ease;
+	    }
+
+	    .hero .btn:hover {
+	        background-color: #e67e22;
+	    }
+	</style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">NNS Portal</div>
+        <ul class="nav-links">
+            <li><a href="/" aria-label="Go to Home">Home</a></li>
+            <li><a href="#services" id="nav-services" aria-label="Go to Services">Services</a></li>
+            <li><a href="#" aria-label="Learn more About us">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NNS Portal</h1>
+            <p>Your all-in-one platform for streamlined student services</p>
+            <a href="#services" class="btn" aria-label="Get started and scroll to services">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <a href="/enrollment" class="card" aria-label="Go to Enrollment and Scheduling page">
+                <h3>Enrollment & Scheduling</h3>
+                <p>Manage your course registration and schedules easily.</p>
+            </a>
+            <a href="/documents" class="card" aria-label="Go to Document Requests page">
+                <h3>Document Requests</h3>
+                <p>Request and track transcripts, certificates, and more.</p>
+            </a>
+            <a href="/career" class="card" aria-label="Go to Career Guidance page">
+                <h3>Career Guidance</h3>
+                <p>Book consultations with advisors and career counselors.</p>
+            </a>
+            <a href="/mental-health" class="card" aria-label="Go to Mental Health Support page">
+                <h3>Mental Health Support</h3>
+                <p>Access wellness resources and counseling services.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 NNS Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

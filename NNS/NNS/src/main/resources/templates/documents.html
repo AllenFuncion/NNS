@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Requests - NNS Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"> </script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">NNS Portal</div>
+    <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Document Requests</h1>
+        <p>Request and track official documents such as transcripts and certificates.</p>
+    </div>
+</header>
+
+<section class="services">
+    <h2>Request Official Documents</h2>
+    <p>Submit requests and track document status.</p>
+	<form id="documentRequestForm">
+	    <input type="text" name="fullName" placeholder="Full Name" required />
+	    <select name="documentType" required>
+	        <option value="">Select Document Type</option>
+	        <option value="transcript">Transcript</option>
+	        <option value="certificate">Graduation Certificate</option>
+	        <option value="enrollment">Enrollment Letter</option>
+	    </select>
+	    <textarea name="additionalInfo" placeholder="Additional Information (optional)"></textarea>
+	    <button class="btn" type="submit">Submit Request</button>
+	</form>
+</section>
+
+<div id="successPopup" style="display:none; position:fixed; top:20px; right:20px; background:#2ecc71; color:white; padding:10px 15px; border-radius:5px; z-index:999;">
+    ✅ Request submitted successfully!
+</div>
+
+<footer>
+    <p>&copy; 2025 LF Desk Portal. All rights reserved.</p>
+</footer>
+<style>
+	  .hero {
+	      background-color: #3498db;
+	      color: white;
+	      padding: 50px 0;  
+	      text-align: center;
+	      transition: background-color 0.3s ease-in-out;
+	  }
+
+	  .hero h1 {
+	      font-size: 2rem;  
+	      margin-bottom: 10px;
+	  }
+
+	  .hero p {
+	      font-size: 1rem; 
+	      margin-top: 10px;
+	  }
+	  
+      .hero .btn {
+          padding: 6px 15px;  
+          background-color: #f39c12;
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          border-radius: 4px; 
+          transition: background-color 0.3s ease;
+      }
+
+      .hero .btn:hover {
+          background-color: #e67e22;
+      }
+ </style>
+
+</body>
+</html>
